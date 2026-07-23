@@ -99,3 +99,27 @@ petals();
 document.getElementById("celebration").style.display="block";
 
 },1200);
+function balloons(){
+
+    for(let i=0;i<15;i++){
+
+        let b=document.createElement("div");
+
+        b.className="balloon";
+
+        const list=["🎈","🎈","🎈","🎀"];
+
+        b.innerHTML=list[Math.floor(Math.random()*list.length)];
+
+        b.style.left=Math.random()*100+"vw";
+
+        b.style.animationDuration=(5+Math.random()*4)+"s";
+
+        document.getElementById("balloons").appendChild(b);
+
+        setTimeout(()=>{
+            b.remove();
+        },9000);
+    }
+
+}
