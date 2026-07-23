@@ -404,3 +404,30 @@ transform:translateX(-4px);
         transform:translateY(0);
     }
 }
+/* ===== Falling Petals ===== */
+
+#petals{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.petal{
+    position:absolute;
+    top:-40px;
+    font-size:22px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+    transform:translateY(-40px) rotate(0deg);
+}
+
+100%{
+    transform:translateY(110vh) rotate(360deg);
+}
+
+}
