@@ -96,6 +96,7 @@ setTimeout(()=>{
 
 startConfetti();
 petals();
+  balloon();
 document.getElementById("celebration").style.display="block";
 
 },1200);
