@@ -2,22 +2,56 @@ let blown = 0;
 
 function blow(candle){
 
-    if(candle.classList.contains("off")) return;
+if(candle.classList.contains("off")) return;
 
-    candle.classList.add("off");
+candle.classList.add("off");
 
-    blown++;
+blown++;
 
-    if(blown === 5){
+if(blown===5){
 
-        setTimeout(()=>{
+document.getElementById("wishMessage").style.display="block";
 
-            alert("✨ Make a Wish! 🎂");
+document.getElementById("cutBtn").style.display="inline-block";
 
-            document.getElementById("cutBtn").style.display="inline-block";
+startConfetti();
 
-        },500);
+}
 
-    }
+}
+
+function startConfetti(){
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.innerHTML=Math.random()>0.5?"🎉":"✨";
+
+c.style.position="fixed";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-20px";
+
+c.style.fontSize=(16+Math.random()*18)+"px";
+
+c.style.transition="4s linear";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.style.top="110vh";
+
+},50);
+
+setTimeout(()=>{
+
+c.remove();
+
+},4500);
+
+}
 
 }
