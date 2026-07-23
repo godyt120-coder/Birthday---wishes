@@ -106,3 +106,100 @@ button:hover{
     transform:scale(1.06);
     box-shadow:0 0 25px rgba(255,182,193,.8);
 }
+/* ===== Sparkles ===== */
+.sparkles{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.sparkles::before,
+.sparkles::after{
+    content:"✨ ✨ ✨ ✨ ✨ ✨ ✨";
+    position:absolute;
+    width:200%;
+    font-size:22px;
+    opacity:.35;
+    animation:sparkleMove 18s linear infinite;
+}
+
+.sparkles::after{
+    top:55%;
+    animation-duration:24s;
+}
+
+@keyframes sparkleMove{
+    from{
+        transform:translateX(-50%);
+    }
+    to{
+        transform:translateX(10%);
+    }
+}
+
+/* ===== Cats ===== */
+.cat{
+    position:fixed;
+    font-size:55px;
+    animation:catFloat 3s ease-in-out infinite;
+    z-index:5;
+    user-select:none;
+}
+
+.cat-left{
+    left:15px;
+    bottom:20px;
+}
+
+.cat-right{
+    right:15px;
+    bottom:20px;
+    animation-delay:1.5s;
+}
+
+@keyframes catFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* ===== Fade Animation ===== */
+.container{
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== Mobile ===== */
+@media(max-width:600px){
+
+.title{
+    font-size:46px;
+}
+
+.subtitle{
+    font-size:15px;
+}
+
+button{
+    width:100%;
+}
+
+.cat{
+    font-size:42px;
+}
+
+}
