@@ -431,3 +431,27 @@ transform:translateX(-4px);
 }
 
 }
+/* ===== Balloons ===== */
+
+#balloons{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.balloon{
+    position:absolute;
+    bottom:-100px;
+    font-size:40px;
+    animation:flyUp linear forwards;
+}
+
+@keyframes flyUp{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
