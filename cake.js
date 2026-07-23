@@ -124,3 +124,27 @@ function balloons(){
     }
 
 }
+function sparkles(){
+
+    for(let i=0;i<40;i++){
+
+        let s=document.createElement("div");
+
+        s.className="sparkle";
+
+        s.innerHTML="✨";
+
+        s.style.left=Math.random()*100+"vw";
+        s.style.top=Math.random()*100+"vh";
+
+        s.style.animationDelay=(Math.random()*2)+"s";
+
+        document.getElementById("sparkles").appendChild(s);
+
+        setTimeout(()=>{
+            s.remove();
+        },4000);
+
+    }
+
+}
