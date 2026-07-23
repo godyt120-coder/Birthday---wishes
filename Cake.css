@@ -312,3 +312,54 @@ transform:translate(-50%,-25px);
 }
 
 }
+/* Cake Cut Animation */
+
+.cake.cut{
+
+animation:shake .5s;
+
+}
+
+.layer.left{
+
+transform:translateX(-35px) rotate(-8deg);
+
+transition:1s;
+
+}
+
+.layer.right{
+
+transform:translateX(35px) rotate(8deg);
+
+transition:1s;
+
+}
+
+@keyframes shake{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+25%{
+
+transform:translateX(-4px);
+
+}
+
+50%{
+
+transform:translateX(4px);
+
+}
+
+75%{
+
+transform:translateX(-4px);
+
+}
+
+}
