@@ -54,3 +54,30 @@ function celebrate(){
 
     alert("🎂 Happy Birthday! Wishing you endless happiness! ❤️");
 }
+function magicEffects(){
+
+    const icons=["✨","🌸","🎈","💖","⭐","🎊"];
+
+    for(let i=0;i<50;i++){
+
+        let e=document.createElement("div");
+
+        e.className="effect";
+
+        e.innerHTML=icons[Math.floor(Math.random()*icons.length)];
+
+        e.style.left=Math.random()*100+"vw";
+
+        e.style.bottom="-30px";
+
+        e.style.animationDuration=(4+Math.random()*4)+"s";
+
+        document.getElementById("effects").appendChild(e);
+
+        setTimeout(()=>{
+            e.remove();
+        },8000);
+
+    }
+
+}
