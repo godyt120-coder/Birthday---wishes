@@ -98,6 +98,7 @@ startConfetti();
 petals();
   balloon();
   sparkles();
+  showCats();
 document.getElementById("celebration").style.display="block";
 
 },1200);
