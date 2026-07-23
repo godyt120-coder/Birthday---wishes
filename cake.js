@@ -55,3 +55,24 @@ c.remove();
 }
 
 }
+function cutCake(){
+
+document.querySelector(".cake").classList.add("cut");
+
+const layers=document.querySelectorAll(".layer");
+
+layers[0].classList.add("left");
+
+layers[1].classList.add("right");
+
+layers[2].classList.add("left");
+
+setTimeout(()=>{
+
+startConfetti();
+
+alert("🎉 Happy Birthday! 🎂");
+
+},1200);
+
+}
