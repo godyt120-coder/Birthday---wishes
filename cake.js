@@ -157,3 +157,16 @@ function showCats(){
     });
 
 }
+const music = document.getElementById("bgMusic");
+
+function toggleMusic(){
+
+    if(music.paused){
+        music.play();
+        document.getElementById("musicBtn").innerHTML="🔊 Music On";
+    }else{
+        music.pause();
+        document.getElementById("musicBtn").innerHTML="🎵 Play Music";
+    }
+
+}
