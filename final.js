@@ -84,3 +84,13 @@ function magicEffects(){
 celebrate();
 
 setInterval(magicEffects,2500);
+function openGift(){
+
+    document.getElementById("giftBox").classList.add("open");
+
+    document.getElementById("giftMessage").style.display="block";
+
+    celebrate();
+    magicEffects();
+
+}
