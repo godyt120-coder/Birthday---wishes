@@ -51,6 +51,31 @@ setTimeout(()=>{
 c.remove();
 
 },4500);
+  function petals(){
+
+    for(let i=0;i<30;i++){
+
+        let p=document.createElement("div");
+
+        p.className="petal";
+
+        p.innerHTML=Math.random()>0.5?"🌸":"🌹";
+
+        p.style.left=Math.random()*100+"vw";
+
+        p.style.animationDuration=(4+Math.random()*4)+"s";
+
+        document.getElementById("petals").appendChild(p);
+
+        setTimeout(()=>{
+
+            p.remove();
+
+        },8000);
+
+    }
+
+  }
 
 }
 
@@ -70,7 +95,7 @@ layers[2].classList.add("left");
 setTimeout(()=>{
 
 startConfetti();
-
+petals();
 document.getElementById("celebration").style.display="block";
 
 },1200);
