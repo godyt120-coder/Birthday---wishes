@@ -68,3 +68,26 @@ function floatingHearts(){
     }
 
 }
+function fallingPetals(){
+
+    for(let i=0;i<30;i++){
+
+        const p=document.createElement("div");
+
+        p.className="petal";
+
+        p.innerHTML=Math.random()>0.5?"🌸":"🌹";
+
+        p.style.left=Math.random()*100+"vw";
+
+        p.style.animationDuration=(4+Math.random()*4)+"s";
+
+        document.getElementById("petals").appendChild(p);
+
+        setTimeout(()=>{
+            p.remove();
+        },8000);
+
+    }
+
+}
