@@ -1,1 +1,108 @@
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap');
 
+/* ---------- Reset ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #ffd6e8,
+        #ffc0cb,
+        #ffe7f3,
+        #ffd9ec
+    );
+
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+/* Animated Background */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Main Card */
+.container{
+    width:90%;
+    max-width:420px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 10px 40px rgba(255,192,203,.45),
+    0 0 30px rgba(255,215,0,.15);
+
+    border:1px solid rgba(255,255,255,.35);
+}
+
+/* Welcome */
+.welcome{
+    color:#d68a00;
+    font-size:20px;
+    margin-bottom:12px;
+    letter-spacing:1px;
+}
+
+/* Title */
+.title{
+    font-family:'Great Vibes',cursive;
+    font-size:58px;
+    color:#ff3f87;
+    margin-bottom:15px;
+}
+
+/* Subtitle */
+.subtitle{
+    color:#5c4a57;
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:35px;
+}
+
+/* Button */
+button{
+    border:none;
+    outline:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(45deg,#ff4fa3,#ffb300);
+
+    transition:.35s;
+}
+
+button:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 25px rgba(255,182,193,.8);
+}
