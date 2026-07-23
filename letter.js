@@ -18,6 +18,7 @@ function openLetter(){
 
     document.querySelector(".envelope").classList.add("open");
     floatingHearts();
+    fallingPetals();
     const message = document.getElementById("message");
 
     message.innerHTML = "";
