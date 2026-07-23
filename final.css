@@ -70,3 +70,27 @@ button{
         transform:translateY(-18px);
     }
 }
+#effects{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.effect{
+    position:absolute;
+    font-size:24px;
+    animation:floatEffect linear forwards;
+}
+
+@keyframes floatEffect{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
