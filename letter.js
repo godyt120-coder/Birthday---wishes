@@ -17,7 +17,7 @@ function openLetter(){
     started = true;
 
     document.querySelector(".envelope").classList.add("open");
-
+    floatingHearts();
     const message = document.getElementById("message");
 
     message.innerHTML = "";
