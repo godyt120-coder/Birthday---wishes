@@ -45,3 +45,26 @@ function openLetter(){
     setTimeout(type,900);
 
 }
+function floatingHearts(){
+
+    for(let i=0;i<25;i++){
+
+        let h=document.createElement("div");
+
+        h.className="heart";
+
+        h.innerHTML="💖";
+
+        h.style.left=Math.random()*100+"vw";
+
+        h.style.animationDuration=(4+Math.random()*3)+"s";
+
+        document.getElementById("hearts").appendChild(h);
+
+        setTimeout(()=>{
+            h.remove();
+        },7000);
+
+    }
+
+}
