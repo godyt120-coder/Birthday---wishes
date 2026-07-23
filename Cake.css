@@ -247,3 +247,68 @@ button:hover{
 .candle.off{
     opacity:.6;
 }
+/* Wish Message */
+
+#wishMessage{
+
+display:none;
+
+font-size:34px;
+
+font-weight:bold;
+
+color:#ff3d8d;
+
+margin:20px;
+
+animation:pop .8s ease infinite alternate;
+
+}
+
+@keyframes pop{
+
+from{transform:scale(1);}
+
+to{transform:scale(1.08);}
+
+}
+
+/* Smoke */
+
+.candle.off::before{
+
+content:"☁️";
+
+position:absolute;
+
+top:-22px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:12px;
+
+animation:smoke 1s forwards;
+
+}
+
+@keyframes smoke{
+
+0%{
+
+opacity:1;
+
+transform:translate(-50%,0);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(-50%,-25px);
+
+}
+
+}
