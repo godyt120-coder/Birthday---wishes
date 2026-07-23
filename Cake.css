@@ -521,3 +521,9 @@ transform:translateX(-4px);
         transform:translateY(-18px);
     }
 }
+#musicBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:999;
+}
