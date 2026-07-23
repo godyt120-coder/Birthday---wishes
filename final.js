@@ -81,3 +81,6 @@ function magicEffects(){
     }
 
 }
+celebrate();
+
+setInterval(magicEffects,2500);
