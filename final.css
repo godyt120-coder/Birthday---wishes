@@ -94,3 +94,46 @@ button{
         opacity:0;
     }
 }
+/* ===== Gift Box ===== */
+
+#giftBox{
+    margin:30px 0;
+    cursor:pointer;
+    text-align:center;
+}
+
+#giftLid{
+    font-size:60px;
+    transition:.8s;
+}
+
+#giftBody{
+    font-size:100px;
+    animation:giftBounce 1.8s infinite;
+}
+
+#giftMessage{
+    display:none;
+    margin-top:20px;
+    font-size:28px;
+    color:#ff3d8d;
+    animation:giftGlow 1.5s infinite alternate;
+}
+
+@keyframes giftBounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+@keyframes giftGlow{
+    from{
+        text-shadow:0 0 10px hotpink;
+    }
+    to{
+        text-shadow:0 0 30px gold;
+    }
+}
+
+#giftBox.open #giftLid{
+    transform:translateY(-40px) rotate(-20deg);
+}
