@@ -1,39 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Cake 🎂</title>
+<h1>🎉 Happy Birthday 🎉</h1>
 
-    <link rel="stylesheet" href="cake.css">
-</head>
-<body>
+<p>Make a wish and tap the candles!</p>
 
-    <h1>🎉 Happy Birthday 🎉</h1>
-
-    <p>Make a wish and tap the candles!</p>
 <div id="knife">🔪</div>
 
 <div class="cake">
-<div class="cream"></div>
-
-<div class="flowers">
-    <span>🌹</span>
-    <span>🌸</span>
-    <span>🌹</span>
-    <span>🌸</span>
-</div>
 
     <div class="cake-top">
+
+        <div class="flowers">
+            <span>🌹</span>
+            <span>🌸</span>
+            <span>🌹</span>
+            <span>🌸</span>
+        </div>
+
         <div class="cream"></div>
 
         <div class="candles">
-    <div class="candle" onclick="blow(this)"></div>
-    <div class="candle" onclick="blow(this)"></div>
-    <div class="candle" onclick="blow(this)"></div>
-    <div class="candle" onclick="blow(this)"></div>
-    <div class="candle" onclick="blow(this)"></div>
+            <div class="candle" onclick="blow(this)"></div>
+            <div class="candle" onclick="blow(this)"></div>
+            <div class="candle" onclick="blow(this)"></div>
+            <div class="candle" onclick="blow(this)"></div>
+            <div class="candle" onclick="blow(this)"></div>
         </div>
+
+    </div>
 
     <div class="layer layer1"></div>
     <div class="layer layer2"></div>
@@ -43,24 +35,14 @@
 
 </div>
 
-
-    <button id="wishBtn">
-        🕯️ Blow Candles
-    </button>
+<div id="wishMessage">
+    ✨ Make a Wish ✨
+</div>
 
 <button id="cutBtn" style="display:none;" onclick="cutCake()">
     🔪 Cut the Cake
 </button>
 
-    <script src="cake.js"></script>
-
-</body>
-</html>
-<div id="wishMessage">
-    ✨ Make a Wish ✨
-</div>
-
-<div id="confetti"></div>
 <div id="celebration">
     <div class="heart">💖</div>
     <h2>Happy Birthday!</h2>
@@ -70,3 +52,6 @@
         💌 Continue
     </button>
 </div>
+
+<script src="cake.js"></script>
+<div id="petals"></div>
