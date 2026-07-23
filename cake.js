@@ -149,3 +149,10 @@ function sparkles(){
     }
 
 }
+function showCats(){
+
+    document.querySelectorAll(".cat").forEach(cat=>{
+        cat.classList.add("show");
+    });
+
+}
