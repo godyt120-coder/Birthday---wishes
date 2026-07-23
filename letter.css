@@ -108,3 +108,29 @@ p{
         opacity:0;
     }
 }
+/* ===== Falling Petals ===== */
+
+#petals{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.petal{
+    position:absolute;
+    top:-40px;
+    font-size:22px;
+    animation:petalFall linear forwards;
+}
+
+@keyframes petalFall{
+    from{
+        transform:translateY(-40px) rotate(0deg);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+}
