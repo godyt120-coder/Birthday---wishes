@@ -92,3 +92,24 @@ function fallingPetals(){
     }
 
 }
+function goldenSparkles(){
+
+    for(let i=0;i<40;i++){
+
+        const s=document.createElement("div");
+
+        s.className="sparkle";
+
+        s.innerHTML="✨";
+
+        s.style.left=Math.random()*100+"vw";
+        s.style.top=Math.random()*100+"vh";
+
+        document.getElementById("sparkles").appendChild(s);
+
+        setTimeout(()=>{
+            s.remove();
+        },2000);
+    }
+
+            }
