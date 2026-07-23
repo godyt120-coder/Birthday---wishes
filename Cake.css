@@ -183,3 +183,60 @@ button:hover{
     border-radius:50%;
     box-shadow:0 0 15px gold;
 }
+/* ===== Premium Decorations ===== */
+
+.flowers{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:8px;
+    font-size:22px;
+    animation:flowerFloat 2s ease-in-out infinite;
+}
+
+@keyframes flowerFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-4px);
+    }
+}
+
+.candles{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:5px;
+}
+
+.candle{
+    width:10px;
+    height:38px;
+    background:linear-gradient(to bottom,#ffffff,#ffe4f2);
+    border-radius:6px;
+    position:relative;
+}
+
+.candle::after{
+    content:"";
+    position:absolute;
+    top:-14px;
+    left:50%;
+    transform:translateX(-50%);
+    width:10px;
+    height:16px;
+    background:radial-gradient(circle,#fff8b0,#ffd700,#ff8c00);
+    border-radius:50% 50% 50% 50%;
+    box-shadow:0 0 15px gold;
+    animation:flicker .25s infinite alternate;
+}
+
+@keyframes flicker{
+    from{
+        transform:translateX(-50%) scale(1);
+    }
+    to{
+        transform:translateX(-50%) scale(.85);
+    }
+}
