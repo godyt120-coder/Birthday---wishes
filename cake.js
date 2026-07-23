@@ -71,8 +71,6 @@ setTimeout(()=>{
 
 startConfetti();
 
-alert("🎉 Happy Birthday! 🎂");
+document.getElementById("celebration").style.display="block";
 
 },1200);
-
-}
