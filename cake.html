@@ -1,70 +1,105 @@
-<h1>🎉 Happy Birthday 🎉</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake 🎂</title>
 
-<p>Make a wish and tap the candles!</p>
+    <link rel="stylesheet" href="cake.css">
+</head>
+<body>
 
-<div id="knife">🔪</div>
+<div class="background">
 
-<div class="cake">
+    <div class="balloon balloon1">🎈</div>
+    <div class="balloon balloon2">🎈</div>
+    <div class="balloon balloon3">🎈</div>
+    <div class="balloon balloon4">🎈</div>
 
-    <div class="cake-top">
+    <div class="sparkles"></div>
 
-        <div class="flowers">
-            <span>🌹</span>
-            <span>🌸</span>
-            <span>🌹</span>
-            <span>🌸</span>
+</div>
+
+<div class="container">
+
+    <h1>🎂 Happy Birthday 🎂</h1>
+
+    <p class="subtitle">
+        Make a wish and blow out the candles!
+    </p>
+
+    <div id="knife">🔪</div>
+
+    <div class="cake">
+
+        <div class="cake-top">
+
+            <div class="flowers">
+                <span>🌸</span>
+                <span>🌹</span>
+                <span>🌸</span>
+                <span>🌹</span>
+                <span>🌸</span>
+            </div>
+
+            <div class="cream"></div>
+
+            <div class="candles">
+
+                <div class="candle" onclick="blow(this)">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle" onclick="blow(this)">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle" onclick="blow(this)">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle" onclick="blow(this)">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle" onclick="blow(this)">
+                    <div class="flame"></div>
+                </div>
+
+            </div>
+
         </div>
+        <div class="cake-middle"></div>
 
-        <div class="cream"></div>
+        <div class="cake-bottom"></div>
 
-        <div class="candles">
-            <div class="candle" onclick="blow(this)"></div>
-            <div class="candle" onclick="blow(this)"></div>
-            <div class="candle" onclick="blow(this)"></div>
-            <div class="candle" onclick="blow(this)"></div>
-            <div class="candle" onclick="blow(this)"></div>
-        </div>
+        <div class="plate"></div>
 
     </div>
 
-    <div class="layer layer1"></div>
-    <div class="layer layer2"></div>
-    <div class="layer layer3"></div>
+    <div class="buttons">
 
-    <div class="plate"></div>
+        <button onclick="blowAllCandles()">
+            💨 Blow All Candles
+        </button>
 
-</div>
+        <button onclick="cutCake()">
+            🔪 Cut Cake
+        </button>
 
-<div id="wishMessage">
-    ✨ Make a Wish ✨
-</div>
+    </div>
 
-<button id="cutBtn" style="display:none;" onclick="cutCake()">
-    🔪 Cut the Cake
-</button>
-
-<div id="celebration">
-    <div class="heart">💖</div>
-    <h2>Happy Birthday!</h2>
-    <p>Your wish has been sent to the stars ✨</p>
+    <div id="message">
+        🎉 Make a wish and enjoy your special day! 💖
+    </div>
 
     <button id="nextBtn" onclick="window.location.href='letter.html'">
-        💌 Continue
+        💌 Open Birthday Letter
     </button>
+
 </div>
 
 <script src="cake.js"></script>
-<audio id="bgMusic" loop>
-    <source src="birthday.mp3" type="audio/mpeg">
-</audio>
 
-<button id="musicBtn" onclick="toggleMusic()">
-    🎵 Play Music
-</button>
-<div id="petals"></div>
-<div id="balloons"></div>
-<div id="sparkles"></div>
-<div id="cats">
-    <div class="cat left-cat">🐱</div>
-    <div class="cat right-cat">😺</div>
-</div>
+</body>
+</html>
