@@ -363,3 +363,44 @@ transform:translateX(-4px);
 }
 
 }
+/* ===== Celebration ===== */
+
+#celebration{
+    display:none;
+    margin-top:30px;
+    animation:fadeIn 1s;
+}
+
+.heart{
+    font-size:70px;
+    animation:heartbeat 1s infinite;
+}
+
+#celebration h2{
+    color:#ff3f8e;
+    margin:10px 0;
+}
+
+#celebration p{
+    color:#666;
+}
+
+#nextBtn{
+    margin-top:20px;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
